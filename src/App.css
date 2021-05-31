@@ -1,0 +1,456 @@
+/* General Rules */
+:root {
+  --green: #09b1ba;
+  --ligthgrey: #ebedee;
+  --darkgrey: #999999;
+  --cherry: #c2175a;
+  --white: #ffffff;
+  --black: #000000;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--ligthgrey);
+}
+
+link,
+a,
+button {
+  text-decoration: none;
+  color: var(--darkgrey);
+}
+
+main {
+  margin: 0 auto;
+  width: 68vw;
+  margin-bottom: 30px;
+}
+
+/* <<<<< HEADER >>>> */
+header {
+  position: relative;
+  background-color: var(--white);
+  height: 60px;
+  border-bottom: 1px solid var(--darkgrey);
+}
+header > div {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  max-width: 1270px;
+  height: 100%;
+}
+input {
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-size: 1.3rem;
+  font-weight: 200;
+  background-color: var(--ligthgrey);
+  min-width: 600px;
+  outline: inherit;
+  border: none;
+  color: var(--darkgrey);
+  border-radius: 5px;
+}
+.headersRecherc {
+  padding: 7px 12px;
+  min-width: 800px;
+  margin-left: 25px;
+  font-size: 1rem;
+}
+.login,
+.vents,
+.signup,
+.logoff,
+.putSell,
+.offerButton {
+  font-size: 12px;
+  font-weight: 400;
+  padding: 9px 8px;
+  cursor: pointer;
+  color: var(--green);
+  border-radius: 5px;
+  width: 100px;
+  border: solid 1px var(--green);
+  text-align: center;
+  margin-left: 10px;
+}
+.vents {
+  background-color: var(--green);
+  color: var(--white);
+  border: solid 1px var(--green);
+}
+.logoff {
+  background-color: var(--cherry);
+  border: solid 1px var(--cherry);
+  color: var(--white);
+}
+
+/* <<<<< HERO >>>>> */
+.heroBlock {
+  height: 65vh;
+  min-height: 400px;
+  margin-bottom: 20px;
+}
+.heroPict {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+  object-fit: cover;
+}
+.hero {
+  min-width: 205px;
+  max-width: 405px;
+  border-radius: 5px;
+  height: 265px;
+  position: absolute;
+  font-size: 1.3rem;
+  background: var(--white);
+  top: calc(100% / 4);
+  left: calc(100% / 6.5);
+}
+.heroH1 {
+  font-size: 34px;
+  font-weight: 400;
+  color: var(--black);
+  padding: 35px 25px;
+}
+.putSell {
+  display: flex;
+  padding: 10px 28px;
+  width: 160px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 30px;
+  margin-bottom: 13px;
+  color: var(--white);
+  background-color: var(--green);
+}
+.rules {
+  font-size: 16px;
+  color: var(--green);
+  margin: 32px;
+}
+
+/* <<<<< OFFERS >>>>> */
+.offersPages {
+  margin: 10px;
+}
+.offersSpan {
+  margin-right: 10px;
+  font-size: 15px;
+  color: var(--darkgrey);
+  font-style: italic;
+}
+.offersBlocCard {
+  align-items: center;
+  justify-content: left;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.offersCard {
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  margin-bottom: 10px;
+}
+.offersBlocAvatar {
+  align-items: center;
+  display: flex;
+  margin: 10px;
+}
+.offersAvatar {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.offersImg {
+  object-fit: cover;
+  height: 82%;
+}
+.offersPic {
+  object-fit: cover;
+  height: 400px;
+}
+
+/* <<<<< SIGNUP-LOGIN >>>>> */
+.mainSignup {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+  max-width: 1270px;
+  height: 100%;
+  background-color: #ffffff;
+}
+.signupForm {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+  width: 320px;
+  padding: 16px;
+  margin-top: 60px;
+}
+.signupH2 {
+  font-size: 24px;
+  line-height: 32px;
+  color: #111111;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.inputName,
+.inputEmail,
+.inputPassword {
+  color: #666;
+  width: 90px;
+  margin-bottom: 50px;
+  border-bottom: #666 solid 2px;
+}
+.loginButton {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  background-color: #09b1ba;
+  font-weight: 400;
+  display: block;
+  height: 42px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+
+/* <<<<< OFFER >>>>> */
+.offerPage {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1270px;
+  height: 100%;
+}
+
+.offerDescr {
+  width: 100%;
+  padding: 23px 0;
+  margin-right: 25px;
+  background-color: var(--white);
+  padding: 20px;
+}
+
+.offerPrice {
+  font-size: 29px;
+  color: #111;
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid 1px var(--darkgrey);
+}
+spam {
+  font-size: 12px;
+}
+.offerDataFix {
+  position: relative;
+  float: left;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: var(--white);
+  align-items: center;
+  line-height: 25px;
+  color: var(--darkgrey);
+}
+
+.offerData {
+  margin-left: 150px;
+  width: 150px;
+  color: var(--darkgrey);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+}
+.offerBloc {
+  padding-bottom: 20px;
+  border-bottom: solid 1px var(--darkgrey);
+}
+.offerName {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 20px;
+}
+.offerProductDescr {
+  margin-top: 40px;
+  font-weight: 400;
+  justify-content: left;
+  margin-top: 10px;
+  color: var(--darkgrey);
+  padding-bottom: 20px;
+  border-bottom: solid 1px var(--darkgrey);
+}
+.offerProfile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+.offerAvatar {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.offerButton {
+  margin: 0px;
+  margin-top: 50px;
+  padding: 10px 300px;
+  background-color: var(--green);
+  color: var(--white);
+}
+.offerPic {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+}
+.offerPicCarousel {
+  width: 80%;
+  height: 100%;
+}
+.offerPic .carousel {
+  box-sizing: border-box;
+  height: 650px;
+  overflow: hidden;
+  overflow-x: scroll;
+  display: flex;
+}
+.offerPic .carousel img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  margin-right: 10px;
+}
+
+/* PUBLISH */
+.publish {
+  margin: 25px auto;
+  display: flex;
+  justify-content: flex-start;
+  width: 100vw;
+  max-width: 1270px;
+  height: 100%;
+  /* background-color: blue; */
+}
+.publisH2 {
+  font-size: 20px;
+  line-height: 32px;
+  color: #111111;
+  font-weight: 400;
+  width: 100%;
+}
+.publishDetails {
+  border-radius: 3px;
+  width: 100vw;
+  max-width: 1270px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 35px;
+  background-color: #ffffff;
+}
+.customFile {
+  width: 150px;
+  padding: 10px;
+  border: 1px solid #09b1ba;
+  text-align: center;
+  cursor: pointer;
+}
+.publishTiDe,
+.publishBrSiCoCoLo,
+.publishPriCheck {
+  border-radius: 3px;
+  width: 100vw;
+  max-width: 1270px;
+  /* height: 200px; */
+  margin-top: 15px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+.publishTitle,
+.publishBrand,
+.publishSize,
+.publishColor,
+.publishCondition,
+.publishPrice {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  color: black;
+}
+.publishDescription,
+.publishLocation {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+.publishButton {
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #09b1ba;
+  width: 8%;
+  height: 42px;
+  justify-content: center;
+  margin-top: 15px;
+  min-width: 600px;
+}
+
+/* PAYMENT */
+.payment {
+  margin: 25px auto;
+  display: flex;
+  justify-content: flex-start;
+  width: 40vw;
+  height: 100%;
+  background-color: #ffffff;
+}
+.paymentCard {
+  align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+}
+.payment p,
+h6 {
+  margin-top: 25px;
+}
+.paymentNumberCard {
+  margin-top: 25px;
+  width: 100%;
+}
+.paymentButton {
+  font-size: 16px;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #09b1ba;
+  width: 100%;
+  height: 80%;
+  justify-content: center;
+  margin-top: 25px;
+}
