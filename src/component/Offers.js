@@ -3,15 +3,6 @@ import { Link } from "react-router-dom";
 const Offers = ({ data }) => {
   return (
     <main>
-      <div className="offersPages">
-        <span className="offersSpan">offers pour page</span>
-        <select name="pages" id="pages">
-          <option value="cinq">5</option>
-          <option value="dix">10</option>
-          <option value="vingt">20</option>
-        </select>
-      </div>
-
       <div className="offersBlocCard">
         {data.offer.map((offer) => {
           return (
