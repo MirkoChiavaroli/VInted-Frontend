@@ -68,7 +68,7 @@ input {
 .offerButton {
   font-size: 12px;
   font-weight: 400;
-  padding: 9px 12px;
+  padding: 9px 7px;
   cursor: pointer;
   color: var(--green);
   border-radius: 5px;
@@ -86,8 +86,8 @@ input {
   background-color: var(--cherry);
   border: solid 1px var(--cherry);
   color: var(--white);
-  font-size: 10px;
-  padding: 10px 12px;
+  padding: 8px;
+  width: 150px;
 }
 
 /* <<<<< HERO >>>>> */
@@ -150,7 +150,7 @@ input {
 .offersBlocCard {
   align-items: center;
   justify-content: left;
-  width: 100%;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -158,6 +158,7 @@ input {
 .offersCard {
   align-items: center;
   justify-content: center;
+  width: 225px;
   height: 500px;
   margin-bottom: 10px;
 }
@@ -173,12 +174,12 @@ input {
   margin-right: 10px;
 }
 .offersImg {
-  object-fit: cover;
   height: 82%;
 }
 .offersPic {
   object-fit: cover;
-  height: 400px;
+  height: 98%;
+  width: 100%;
 }
 
 /* <<<<< SIGNUP-LOGIN >>>>> */
