@@ -4,7 +4,7 @@ const Offers = ({ data }) => {
   return (
     <main>
       <div className="offersBlocCard">
-        {data.offer.map((offer) => {
+        {data.map((offer) => {
           return (
             <Link key={offer._id} to={`/offer/${offer._id}`}>
               <div className="offersCard">

@@ -27,7 +27,7 @@ const Login = ({ setUser }) => {
       };
       // richiesta serveur
       const response = await axios.post(
-        "https://lereacteur-vinted-api.herokuapp.com/user/login",
+        "https://vinted-backend-first.herokuapp.com/user/login",
         data
       );
       // richiesta tokenXcoockie

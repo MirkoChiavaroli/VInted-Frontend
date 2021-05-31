@@ -12,7 +12,7 @@ const Offer = ({ setUser, userToken }) => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https://lereacteur-vinted-api.herokuapp.com/offer/${id}`
+          `https://vinted-backend-first.herokuapp.com/offer/${id}`
         );
         console.log(response.data);
         setData(response.data);
@@ -32,9 +32,9 @@ const Offer = ({ setUser, userToken }) => {
       <main className="offerPage">
         <div className="offerPic">
           <div className="offerPicCarousel">
-            {data.product_pictures.length > 0 ? (
+            {data.product_image.length > 0 ? (
               <div className="carousel">
-                {data.product_pictures.map((elem) => {
+                {data.product_image.map((elem) => {
                   return (
                     <img
                       key={elem.asset_id}
@@ -114,7 +114,7 @@ const Offer = ({ setUser, userToken }) => {
 
             <div>
               <p className="offerName">{data.product_name}</p>
-              <p className="offerProductDescr">{data.product_description}</p>
+
               <div className="offerProfile">
                 {data.owner.account.avatar ? (
                   <img

@@ -74,7 +74,7 @@ const Publish = ({ userToken }) => {
       formData.append("price", price);
       // richiesta serveur
       const response = await axios.post(
-        "https://lereacteur-vinted-api.herokuapp.com/offer/publish",
+        "https://vinted-backend-first.herokuapp.com/offer/publish",
         formData,
         {
           headers: {

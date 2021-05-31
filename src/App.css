@@ -68,7 +68,7 @@ input {
 .offerButton {
   font-size: 12px;
   font-weight: 400;
-  padding: 9px 8px;
+  padding: 9px 12px;
   cursor: pointer;
   color: var(--green);
   border-radius: 5px;
@@ -86,6 +86,8 @@ input {
   background-color: var(--cherry);
   border: solid 1px var(--cherry);
   color: var(--white);
+  font-size: 10px;
+  padding: 10px 12px;
 }
 
 /* <<<<< HERO >>>>> */
@@ -188,7 +190,7 @@ input {
   width: 100vw;
   max-width: 1270px;
   height: 100%;
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 .signupForm {
   display: flex;
@@ -203,7 +205,7 @@ input {
 .signupH2 {
   font-size: 24px;
   line-height: 32px;
-  color: #111111;
+  color: var(--black);
   font-weight: 500;
   display: block;
   width: 100%;
@@ -213,16 +215,16 @@ input {
 .inputName,
 .inputEmail,
 .inputPassword {
-  color: #666;
+  color: var(--darkgrey);
   width: 90px;
   margin-bottom: 50px;
-  border-bottom: #666 solid 2px;
+  border-bottom: var(--darkgrey) solid 2px;
 }
 .loginButton {
   font-size: 16px;
   line-height: 22px;
-  color: #ffffff;
-  background-color: #09b1ba;
+  color: var(--white);
+  background-color: var(--green);
   font-weight: 400;
   display: block;
   height: 42px;
@@ -370,12 +372,12 @@ spam {
   justify-content: center;
   align-items: center;
   padding-left: 35px;
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 .customFile {
   width: 150px;
   padding: 10px;
-  border: 1px solid #09b1ba;
+  border: 1px solid var(--green);
   text-align: center;
   cursor: pointer;
 }
@@ -388,7 +390,7 @@ spam {
   /* height: 200px; */
   margin-top: 15px;
   padding: 20px;
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 .publishTitle,
 .publishBrand,
@@ -401,7 +403,7 @@ spam {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 25px;
-  color: black;
+  color: var(--black);
 }
 .publishDescription,
 .publishLocation {
@@ -409,12 +411,12 @@ spam {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: black;
+  color: var(--black);
 }
 .publishButton {
   font-size: 16px;
-  color: #ffffff;
-  background-color: #09b1ba;
+  color: var(--white);
+  background-color: var(--green);
   width: 8%;
   height: 42px;
   justify-content: center;
@@ -429,7 +431,7 @@ spam {
   justify-content: flex-start;
   width: 40vw;
   height: 100%;
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 .paymentCard {
   align-items: center;
