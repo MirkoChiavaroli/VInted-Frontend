@@ -18,4 +18,4 @@ yarn
 
 yarn start
 
-![Vinted](assets/img/Vinted.jpg)
+![Vinted](src/assets/img/Vinted.jpg)
